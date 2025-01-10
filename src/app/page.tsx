@@ -5,9 +5,9 @@ export default async function Index() {
         <a
           className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
           target="_blank"
-          href="https://www.youtube.com/@jollycoding"
+          href="https://www.linkedin.com/in/aqsa-qurayshi-843746277/"
         >
-          🎞️ Follow on YouTube
+          🎞️ Follow on Linkedin
         </a>
         <h1 className="font-sans text-balance font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
           Next.js 14 Server Actions and Supabase / Auth.
@@ -27,7 +27,7 @@ export default async function Index() {
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border border-input hover:bg-accent hover:text-accent-foreground h-11 px-8 rounded-md"
-            href="https://github.com/shadcn/taxonomy"
+            href="https://github.com/Aqsaqur"
           >
             GitHub
           </a>

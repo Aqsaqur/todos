@@ -6,18 +6,10 @@ const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : "http://localhost:3000";
 
-// Validate the `defaultUrl` to ensure it is a valid URL
-try {
-  new URL(defaultUrl);
-} catch (error) {
-  console.error("Invalid default URL:", defaultUrl);
-  throw new Error(`Default URL is invalid: ${defaultUrl}`);
-}
-
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Todo App",
-  description: "An Auth and NextJS server actions",
+  title: "Next.js and Supabase Todo App",
+  description: "An example of Supabase, Auth and NextJS server actions",
 };
 
 export default function RootLayout({

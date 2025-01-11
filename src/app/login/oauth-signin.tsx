@@ -23,14 +23,15 @@ export function OAuthButtons() {
     <>
       {oAuthProviders.map((provider) => (
         <Button
+          key={provider.name} // Unique key for Button
           className="w-full flex items-center justify-center gap-2"
           variant="outline"
           onClick={async () => {
             await oAuthSignIn(provider.name);
           }}
         >
-          {provider.icon}
-          Login with {provider.displayName}
+          <span key={`${provider.name}-icon`}>{provider.icon}</span> {/* Key for icon */}
+          <span key={`${provider.name}-text`}>Login with {provider.displayName}</span> {/* Key for text */}
         </Button>
       ))}
     </>

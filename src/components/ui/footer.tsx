@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-4">
             <p className="font-medium mb-2">
-              &copy; 2024 Aqsa ♡ | Todo Lint
+              &copy; 2024 Aqsa ♡ | Todo List
             </p>
             <p className="text-sm">"Your future is created by what you do today, not tomorrow."</p>
           </div>

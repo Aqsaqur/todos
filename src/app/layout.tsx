@@ -1,6 +1,7 @@
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import Header from "@/components/header";
+import Footer from "@/components/ui/footer";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -8,7 +9,7 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Todo App",
+  title: "Next.js Todo App",
   description: "An example of Supabase, Auth and NextJS server actions",
 };
 
@@ -21,7 +22,9 @@ export default function RootLayout({
     <html lang="en" className={GeistSans.variable}>
       <body className="sticky top-0 bg-background text-foreground">
         <Header />
-        <main className="flex flex-col items-center">{children}</main>
+        <main className="flex flex-col items-center">{children}
+        </main>
+        <Footer/>
       </body>
     </html>
   );

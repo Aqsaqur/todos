@@ -19,9 +19,10 @@ function FormContent() {
         name="todo"
         required
         placeholder="Add a new todo"
+        // className="text-[#e29abe]"
       />
-      <Button type="submit" size="icon" className="min-w-10" disabled={pending}>
-        <Send className="h-5 w-5" />
+      <Button type="submit" size="icon" className="min-w-10 bg-[#C9A9A6]" disabled={pending}>
+        <Send className="h-5 w-5 bg-[#C9A9A6]" />
         <span className="sr-only">Submit Todo</span>
       </Button>
     </>
@@ -39,7 +40,7 @@ export function TodoForm({
       <CardContent className="p-3">
         <form
           ref={formRef}
-          className="flex gap-4"
+          className="flex gap-4 bg-[ #e29abe]"
           action={async (data) => {
             const newTodo: Todo = {
               id: -1,

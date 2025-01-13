@@ -15,15 +15,15 @@ export default async function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <nav className="flex items-center space-x-4 lg:space-x-6">
           <a className="mr-6 flex items-center space-x-2" href="/">
-            <span className="font-bold">SupaTodo</span>
+            <span className="font-bold text-[#ee9dab]">⋆. 𐙚 ˚Manage Your Todos ⋆. 𐙚 ˚</span>
           </a>
-          <Link href="/todos">Todos</Link>
+          <Link href="/todos" className="text-[#d46ea1]">Todos</Link>
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-2">
           {user !== null ? (
-            <form action={signOut} className="flex items-center gap-2">
+            <form action={signOut} className="flex items-center gap-2 text-[#FFB6C1]">
               <p>{user.email}</p>
-              <Button>Sign Out</Button>
+              <Button className="bg-[#C9A9A6]">Sign Out</Button>
             </form>
           ) : (
             <Button asChild>
@@ -33,5 +33,6 @@ export default async function Header() {
         </div>
       </div>
     </header>
+    
   );
 }

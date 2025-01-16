@@ -7,7 +7,7 @@ const Footer = () => {
             <p className="font-medium mb-2">
               &copy; 2024 Aqsa ♡ | Todo List
             </p>
-            <p className="text-sm">"Your future is created by what you do today, not tomorrow."</p>
+            <p className="text-sm text-xl text-bold">"Your future is created by what you do today, not tomorrow."</p>
           </div>
           <div className="mt-4 text-sm">
             <p>Feedback related to this Assignment♡</p>
